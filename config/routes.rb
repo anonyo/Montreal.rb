@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   resources :news_items, only: [:index, :show]
   resources :organizations, only: [:index, :show]
   resources :pages, only: [:show]
+  resources :jobs, only: [:index, :show]
 
   root 'home#index'
 end
